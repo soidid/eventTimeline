@@ -1,0 +1,73 @@
+.Records {
+	text-align: center;
+	padding-top: 30px;
+	margin: 0 auto;
+	line-height: 1.6;
+	padding: 4px 8px;
+}
+@media screen and (min-width: 900px){
+	.Records {
+		width: 900px;
+	}
+}
+.Records-year {
+	text-align: left;
+	border-left: 1px solid rgb(153,155,154);
+	padding-left: 10px;
+	
+}
+.Records-yearTitle {
+	font-weight: 800;
+	font-size: 18px;
+	padding: 14px 0 8px 6px;
+
+}
+.Records-entry {
+	display: inline-block;
+	border: 1px solid rgb(220,220,220);
+	width: 100%;
+	vertical-align: top;
+	text-align: left;
+	background: white;
+	text-decoration: none;
+	color: rgb(53,55,54);
+	margin-bottom: 8px;
+	position: relative;
+
+
+}
+.Records-unitPoint {
+	background: #801121;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	position: absolute;
+	top: 13px;
+	left: -15.5px;
+}
+.Records-link, .Records-link:visited {
+    color: #801121;
+    text-decoration: none;
+}
+.Records-relatedNewsItitle {
+	margin-top: 10px;
+}
+
+.Records-flexItem {
+	display: flex;
+}
+.Records-flexLeft {
+	flex: 0 0 80px;
+	padding: 4px;
+	text-align: center;
+    font-weight: 800;
+    color: gray;
+    font-family: georgia, "Helvetica Neue", "Helvetica", "Arial", "STHeitiTC-Light","Microsoft JhengHei", sans-serif;
+}
+.Records-flexMain {
+	flex: 1;
+	padding: 4px;
+	color: rgb(53,55,54);
+	font-size: 14px;
+	
+}
