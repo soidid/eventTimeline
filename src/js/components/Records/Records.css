@@ -54,10 +54,15 @@
 }
 
 .Records-flexItem {
-	display: flex;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 .Records-flexLeft {
-	flex: 0 0 80px;
+	-webkit-box-flex: 0 0 80px;
+    -moz-box-flex:  0 0 80px;
+    flex: 0 0 80px;
 	padding: 4px;
 	text-align: center;
     font-weight: 800;
@@ -65,7 +70,9 @@
     font-family: georgia, "Helvetica Neue", "Helvetica", "Arial", "STHeitiTC-Light","Microsoft JhengHei", sans-serif;
 }
 .Records-flexMain {
-	flex: 1;
+	-webkit-box-flex: 1;
+    -moz-box-flex:  1;
+    flex: 1;
 	padding: 4px;
 	color: rgb(53,55,54);
 	font-size: 14px;
