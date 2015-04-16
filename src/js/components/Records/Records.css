@@ -76,5 +76,11 @@
 	padding: 4px;
 	color: rgb(53,55,54);
 	font-size: 14px;
-	
+}
+.Records-eventTitle {
+	font-weight: 800;
+	margin-top: 2px;
+}
+.Records-eventContent {
+	//margin-left: 4px;
 }

@@ -38,9 +38,12 @@ var Records = React.createClass({
                 <div className="Records-flexItem">
                     <div className="Records-flexLeft">{value.month} / {value.day}</div>
                     <div className="Records-flexMain">
-                    {value.event}
-                    {relatedNewsTitle}
-                    {relatedNewsItem}
+                        <div className="Records-eventTitle">{value.title}</div>
+                        <div className="Records-eventContent">
+                             {value.event}
+                             {relatedNewsTitle}
+                             {relatedNewsItem}
+                        </div>
                     </div>
                 </div>
             </div>

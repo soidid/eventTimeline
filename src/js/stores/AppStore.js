@@ -59,8 +59,9 @@ function parseData (argument) {
   // https://spreadsheets.google.com/feeds/list/1YJwYBacyYvjFIKZgS5cNr2IuXxUypcvvZndOJtydkm8/od6/public/values?alt=json
   // https://github.com/councilor2014/councilor2014.github.io/blob/master/app.js
 
-  var keyPath = "1yaW4FOHTf2n6IW8liCCZpfUOGF2qTjjXtdmk78WhJuE";
-  /* ===== GET JSON , Default set to 選罷法 ======= */
+  //var keyPath = "1yaW4FOHTf2n6IW8liCCZpfUOGF2qTjjXtdmk78WhJuE";
+/* ===== GET JSON , Default set to 航空城事件 ======= */
+  var keyPath = "1hR75qa9zGbx0mnQIzQbaIHcywDYtXy5iNo7UHkWdd7Q";
   var hash = window.location.hash.substring(1); // remove #
   if(hash){
       keyPath = hash;
@@ -89,6 +90,7 @@ function parseData (argument) {
             var date = value.gsx$date.$t;
 
             anEntry.date = date;
+            anEntry.title = value.gsx$title.$t;
             anEntry.event = value.gsx$event.$t;
             anEntry.relatedNews = [];
             
